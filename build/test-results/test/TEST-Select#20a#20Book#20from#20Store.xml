@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Select a Book from Store" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-02-21T21:53:42" hostname="JACOPC" time="9.014">
+  <properties/>
+  <testcase name="Scenario Outline name: I am sign in Book Store and Select a Book" classname="Select a Book from Store" time="9.014">
+    <failure message="cucumber.runtime.CucumberException: Failed to instantiate class stepdefinitions.LevelOneSteps - this class doesn't have an empty or a page enabled constructor&quot;" type="cucumber.runtime.CucumberException">cucumber.runtime.CucumberException: Failed to instantiate class stepdefinitions.LevelOneSteps - this class doesn't have an empty or a page enabled constructor&quot;
+	at app//cucumber.runtime.SerenityObjectFactory.newInstance(SerenityObjectFactory.java:66)
+	at app//cucumber.runtime.SerenityObjectFactory.cacheNewInstance(SerenityObjectFactory.java:51)
+	at app//cucumber.runtime.SerenityObjectFactory.getInstance(SerenityObjectFactory.java:41)
+	at app//cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)
+	at app//cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)
+	at app//cucumber.api.TestStep.executeStep(TestStep.java:102)
+	at app//cucumber.api.TestStep.run(TestStep.java:83)
+	at app//cucumber.api.TestCase.run(TestCase.java:58)
+	at app//cucumber.runner.Runner.runPickle(Runner.java:80)
+	at app//cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)
+	at app//cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at app//cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at app//org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at app//org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at app//org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at app//org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at app//org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at app//org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at app//cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at app//cucumber.api.junit.Cucumber.runChild(Cucumber.java:117)
+	at app//cucumber.api.junit.Cucumber.runChild(Cucumber.java:55)
+	at app//org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at app//org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at app//org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at app//org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at app//org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at app//cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:126)
+	at app//org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at app//org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:108)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:39)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:52)
+	at java.base@15.0.2/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@15.0.2/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base@15.0.2/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@15.0.2/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:176)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at cucumber.runtime.SerenityObjectFactory.newInstance(SerenityObjectFactory.java:63)
+	... 51 more
+Caused by: java.lang.ExceptionInInitializerError
+	at stepdefinitions.LevelOneSteps.&lt;init&gt;(LevelOneSteps.java:10)
+	... 57 more
+Caused by: java.lang.IllegalStateException: The driver executable does not exist: C:\VisualCode\RetoMegaproyectos\src\test\resources\driver\chromedriver.exe
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
+	at pages.BasePage.&lt;clinit&gt;(BasePage.java:23)
+	... 58 more
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - ?[91m
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+TEST FAILED WITH ERROR: Scenario Outline name
+---------------------------------------------------------------------?[0m
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - ?[91mTEST FAILED AT STEP Given I am in demoqa page?[0m
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
+[pool-2-thread-1] INFO net.thucydides.core.requirements.PackageRequirementsTagProvider - Loading requirements from package requirements at: net.thucydides.showcase.cucumber.junit
+]]></system-err>
+</testsuite>
