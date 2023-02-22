@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">1</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">19.714s</div>
+<div class="counter">56.253s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">0%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,47 +61,13 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
+<a href="#tab0">Tests</a>
 </li>
 <li>
-<a href="#tab1">Tests</a>
+<a href="#tab1">Standard error</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="Scenario Outline name: I am sign in Book Store and Select a Book"></a>
-<h3 class="failures">Scenario Outline name: I am sign in Book Store and Select a Book</h3>
-<span class="code">
-<pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button id=&quot;gotoStore&quot; type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;...&lt;/button&gt; is not clickable at point (829, 665). Other element would receive the click: &lt;div&gt;...&lt;/div&gt;
-  (Session info: chrome=110.0.5481.104)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'JACOPC', ip: '192.168.1.22', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.104, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\javie\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59576}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 6fc487488143fb56a54366594217b6fb
-	at java.base@15.0.2/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base@15.0.2/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-	at java.base@15.0.2/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base@15.0.2/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base@15.0.2/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at app//org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at app//org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at app//org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at app//org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at app//org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at app//org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at app//pages.BasePage.clickElement(BasePage.java:54)
-	at app//pages.LevelOnePage.clickStore(LevelOnePage.java:33)
-	at app//stepdefinitions.LevelOneSteps.iSearchABookWithNameBook(LevelOneSteps.java:27)
-	at ✽.I search a book with name book(src/test/resources/features/level_one.feature:8)
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -112,11 +78,35 @@ Session ID: 6fc487488143fb56a54366594217b6fb
 </tr>
 </thead>
 <tr>
-<td class="failures">Scenario Outline name: I am sign in Book Store and Select a Book</td>
-<td class="failures">19.714s</td>
-<td class="failures">failed</td>
+<td class="success">Scenario Outline name: I am sign in Book Store and Select a Book</td>
+<td class="success">56.253s</td>
+<td class="success">passed</td>
 </tr>
 </table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 1915
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1677078154.260][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+feb. 22, 2023 10:02:34 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - ?[92m
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Scenario Outline name
+----------------------------------------------------------------------------?[0m
+[pool-2-thread-1] INFO net.thucydides.core.requirements.PackageRequirementsTagProvider - Loading requirements from package requirements at: net.thucydides.showcase.cucumber.junit
+</pre>
+</span>
 </div>
 </div>
 <div id="footer">
@@ -126,7 +116,7 @@ Session ID: 6fc487488143fb56a54366594217b6fb
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.6</a> at Feb 21, 2023, 11:26:28 PM</p>
+<a href="http://www.gradle.org">Gradle 7.6</a> at Feb 22, 2023, 10:03:33 AM</p>
 </div>
 </div>
 </body>

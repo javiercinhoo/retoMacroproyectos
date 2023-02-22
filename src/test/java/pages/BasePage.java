@@ -8,6 +8,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.JavascriptExecutor;
  
 
 public class BasePage {
@@ -18,10 +19,11 @@ public class BasePage {
    
     static {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/driver/chromedriver.exe");
-        ChromeOptions chromeOptions = new ChromeOptions();
-        driver = new ChromeDriver(chromeOptions);
+        ChromeOptions chromeOptions = new ChromeOptions();        
+        driver = new ChromeDriver(chromeOptions);         
         wait = new WebDriverWait(driver, 10);
-        driver.manage().window().maximize();        
+        driver.manage().window().maximize();
+                
         
         
     }     
@@ -31,7 +33,7 @@ public class BasePage {
     }   
 
     public static void navigateTo(String url) {       
-        driver.get(url); 
+        driver.get(url);        
     }
        public static void closeBrowser() {
         if (driver != null) {
@@ -66,7 +68,7 @@ public class BasePage {
     }
 
     //Manejo de Alertas Ventanas emergenteso alert box
-    public void dismissAlert(){
+    public void dismissAlert(){      
         driver.switchTo().alert().dismiss();
     }
 
@@ -78,5 +80,13 @@ public class BasePage {
     public void goToLinkText(String linkText){
         driver.findElement(By.linkText(linkText)).click();
     }  
- 
+
+    public void moveScroll(){      
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,700)");    
+    }
+    public void zoomPage(){      
+        JavascriptExecutor executor = (JavascriptExecutor) driver;
+        executor.executeScript("document.body.style.zoom='75%'");    
+    }
 }
