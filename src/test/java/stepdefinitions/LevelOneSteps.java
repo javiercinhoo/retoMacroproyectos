@@ -20,18 +20,20 @@ public class LevelOneSteps {
     public void iWriteTheUserAndPassword(String User, String Password) {
         levelone.iAmInDemoqaPage(User,Password);
         levelone.clickLogin();
+        levelone.clickStore(); 
     }
 
     @When("^I search a book with name book$")
-    public void iSearchABookWithNameBook(){   
-        levelone.clickStore(); 
-       levelone.clickSearch("Speaking");
+    public void iSearchABookWithNameBook(){     
+        levelone.iSearchABookWithNameBook("Speaking");
     }
 
     @And("^select a book$")
-    public void selectABook(){
-        levelone.clickBook();
-        levelone.clickAdd();
+    public void selectABook()throws InterruptedException{          
+        levelone.clickBook();                
+        levelone.clickAdd();        
+        levelone.dismissAlert();    
+        
     }
 
     @Then("^I back the coleccion$")
@@ -41,7 +43,7 @@ public class LevelOneSteps {
 
     @And("^I validate a book$")
     public void iValidateABook(){
-        Assert.assertEquals("Speaking JavaScript", levelone.firstResult());
+       Assert.assertEquals("Speaking JavaScript", levelone.firstResult());
     }
 
     

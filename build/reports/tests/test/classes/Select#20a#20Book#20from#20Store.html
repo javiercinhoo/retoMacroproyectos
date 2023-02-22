@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">9.014s</div>
+<div class="counter">19.714s</div>
 <p>duration</p>
 </div>
 </td>
@@ -66,9 +66,6 @@
 <li>
 <a href="#tab1">Tests</a>
 </li>
-<li>
-<a href="#tab2">Standard error</a>
-</li>
 </ul>
 <div id="tab0" class="tab">
 <h2>Failed tests</h2>
@@ -76,81 +73,30 @@
 <a name="Scenario Outline name: I am sign in Book Store and Select a Book"></a>
 <h3 class="failures">Scenario Outline name: I am sign in Book Store and Select a Book</h3>
 <span class="code">
-<pre>cucumber.runtime.CucumberException: Failed to instantiate class stepdefinitions.LevelOneSteps - this class doesn't have an empty or a page enabled constructor&quot;
-	at app//cucumber.runtime.SerenityObjectFactory.newInstance(SerenityObjectFactory.java:66)
-	at app//cucumber.runtime.SerenityObjectFactory.cacheNewInstance(SerenityObjectFactory.java:51)
-	at app//cucumber.runtime.SerenityObjectFactory.getInstance(SerenityObjectFactory.java:41)
-	at app//cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)
-	at app//cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)
-	at app//cucumber.api.TestStep.executeStep(TestStep.java:102)
-	at app//cucumber.api.TestStep.run(TestStep.java:83)
-	at app//cucumber.api.TestCase.run(TestCase.java:58)
-	at app//cucumber.runner.Runner.runPickle(Runner.java:80)
-	at app//cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)
-	at app//cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
-	at app//cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
-	at app//org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at app//org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at app//org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at app//org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at app//org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at app//org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at app//cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
-	at app//cucumber.api.junit.Cucumber.runChild(Cucumber.java:117)
-	at app//cucumber.api.junit.Cucumber.runChild(Cucumber.java:55)
-	at app//org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at app//org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at app//org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at app//org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at app//org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at app//cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:126)
-	at app//org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at app//org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:108)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:57)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:39)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:52)
-	at java.base@15.0.2/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@15.0.2/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base@15.0.2/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@15.0.2/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:176)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-Caused by: java.lang.reflect.InvocationTargetException
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at cucumber.runtime.SerenityObjectFactory.newInstance(SerenityObjectFactory.java:63)
-	... 51 more
-Caused by: java.lang.ExceptionInInitializerError
-	at stepdefinitions.LevelOneSteps.&lt;init&gt;(LevelOneSteps.java:10)
-	... 57 more
-Caused by: java.lang.IllegalStateException: The driver executable does not exist: C:\VisualCode\RetoMegaproyectos\src\test\resources\driver\chromedriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
-	at pages.BasePage.&lt;clinit&gt;(BasePage.java:23)
-	... 58 more
+<pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button id=&quot;gotoStore&quot; type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;...&lt;/button&gt; is not clickable at point (829, 665). Other element would receive the click: &lt;div&gt;...&lt;/div&gt;
+  (Session info: chrome=110.0.5481.104)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'JACOPC', ip: '192.168.1.22', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.104, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\javie\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59576}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6fc487488143fb56a54366594217b6fb
+	at java.base@15.0.2/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base@15.0.2/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base@15.0.2/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base@15.0.2/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base@15.0.2/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at app//org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at app//org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at app//org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at app//org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at app//org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at app//org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at app//pages.BasePage.clickElement(BasePage.java:54)
+	at app//pages.LevelOnePage.clickStore(LevelOnePage.java:33)
+	at app//stepdefinitions.LevelOneSteps.iSearchABookWithNameBook(LevelOneSteps.java:27)
+	at ✽.I search a book with name book(src/test/resources/features/level_one.feature:8)
 </pre>
 </span>
 </div>
@@ -167,29 +113,10 @@ Caused by: java.lang.IllegalStateException: The driver executable does not exist
 </thead>
 <tr>
 <td class="failures">Scenario Outline name: I am sign in Book Store and Select a Book</td>
-<td class="failures">9.014s</td>
+<td class="failures">19.714s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
-</div>
-<div id="tab2" class="tab">
-<h2>Standard error</h2>
-<span class="code">
-<pre>[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - ?[91m
-           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
-  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
- (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
-  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
- (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
-          \_\                                                            
-
-TEST FAILED WITH ERROR: Scenario Outline name
----------------------------------------------------------------------?[0m
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - ?[91mTEST FAILED AT STEP Given I am in demoqa page?[0m
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
-[pool-2-thread-1] INFO net.thucydides.core.requirements.PackageRequirementsTagProvider - Loading requirements from package requirements at: net.thucydides.showcase.cucumber.junit
-</pre>
-</span>
 </div>
 </div>
 <div id="footer">
@@ -199,7 +126,7 @@ TEST FAILED WITH ERROR: Scenario Outline name
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.6</a> at Feb 21, 2023, 4:53:51 PM</p>
+<a href="http://www.gradle.org">Gradle 7.6</a> at Feb 21, 2023, 11:26:28 PM</p>
 </div>
 </div>
 </body>

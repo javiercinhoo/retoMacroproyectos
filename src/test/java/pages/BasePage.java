@@ -8,7 +8,6 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
  
 
 public class BasePage {
@@ -22,20 +21,24 @@ public class BasePage {
         ChromeOptions chromeOptions = new ChromeOptions();
         driver = new ChromeDriver(chromeOptions);
         wait = new WebDriverWait(driver, 10);
+        driver.manage().window().maximize();        
+        
+        
     }     
     public BasePage(WebDriver driver) {
         BasePage.driver = driver;
-        wait = new WebDriverWait(driver, 10);
+        wait = new WebDriverWait(driver, 10);     
     }   
 
-    public static void navigateTo(String url) {
-        driver.get(url);
+    public static void navigateTo(String url) {       
+        driver.get(url); 
     }
        public static void closeBrowser() {
         if (driver != null) {
             driver.quit();
         }
-    }
+    }  
+
     private WebElement Find(String locator) {
         return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
     }
@@ -75,5 +78,5 @@ public class BasePage {
     public void goToLinkText(String linkText){
         driver.findElement(By.linkText(linkText)).click();
     }  
-
+ 
 }
